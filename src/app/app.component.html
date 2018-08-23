@@ -1,5 +1,4 @@
 <style>
-
 table {
   border-collapse: collapse;
   width: 50em;
@@ -11,44 +10,46 @@ table.center {
     margin-right:auto;
 }
 
-
 td{
   align: left;
 }
+
 h1 {
   color:#4CAF50;
   text-align: center;
-
 }
+
 h3 {
   color:#4CAF50;
   magin.left: 330px;
-
 }
+
 th {
   text-align: left; 
   color:steelblue
 }
+
 header{
     margin-left: 100px;
-
 }
-
 
 #table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    
 }
 
 #table td, #table th {
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     padding: 8px;
 }
 
-#table tr:nth-child(even){background-color: #f2f2f2;}
+#table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
 
-#table tr:hover {background-color: #ddd;}
+#table tr:hover {
+	background-color: #ddd;
+}
 
 #table th {
     padding-top: 12px;
@@ -69,18 +70,15 @@ header{
     font-size: 16px;
 }
 
-.field {
-margin: center;
+ul {
+ list-style-type: none;
 }
-
 </style>
 
-<h1>{{name}}</h1>
 <table class="center" id="table">
  <tr>
-  <th>Dados Pessoais</th>
-  <th></th>
-  <th></th>
+  <th colspan="3">{{name}}</th>
+  
  </tr>
  <tr>
   <td>Data de nascimento: {{dateOfBirth}}</td>
@@ -115,11 +113,32 @@ margin: center;
 </table>
 <br>
 
+<table class="center" id="table">
+ <tr>
+  <th>Dados Pessoais</th>
+ </tr>
+ <tr>
+  <td>{{profile[0]}}</td>
+ </tr>
+ <tr>
+  <td>{{profile[1]}}</td>
+ </tr>
+</table>
+<br>
+
+<table class="center" id="table">
+ <tr>
+  <th>Formação Acadêmica</th>
+ </tr>
+ <tr>
+  <td>{{academicFormation}}</td>
+ </tr>
+</table>
+<br>
 
 <table class='center' id="table">
  <tr>
-  <th>Provisory Modal</th>
-  <th></th>
+  <th colspan="2">Provisory Modal</th>
  </tr>
  <tr>
   <td>Curso</td>
@@ -141,12 +160,12 @@ margin: center;
 
 
 <br>
-<div></div>
+<div ng-app="ngModule" ng-strict-di>
+ <div ng-controller = 'controllerDataset'>
+	
 <table class='center' id="table">
  <tr>
-  <th class='header'>Cursos</th>
-  <th></th>
-  <th></th>
+  <th colspan="3" class='header'>Cursos</th>
   <th class='header'><button type="button" class='button' (click)="add()">Adicionar</button></th>
  </tr>
  <ul>
@@ -160,3 +179,6 @@ margin: center;
 
 </ul>
 </table>
+
+</div>
+</div>

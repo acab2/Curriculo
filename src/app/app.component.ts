@@ -22,7 +22,8 @@ export class AppComponent {
   profile = ['Trabalho em equipe', 'Ótimas noções em OO e lógica de programação'];
   academicFormation = '2014.2 - Cursando - Universidade Federal de Pernambuco - Ciência da Computação';
   
-  title = 'hello world';
+  
+  
   courses = 
 [
 	{
