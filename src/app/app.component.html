@@ -1,84 +1,8 @@
-<style>
-table {
-  border-collapse: collapse;
-  width: 50em;
-  border: 1px solid #666;
-  align: center;
-}
-table.center {
-    margin-left:auto; 
-    margin-right:auto;
-}
-
-td{
-  align: left;
-}
-
-h1 {
-  color:#4CAF50;
-  text-align: center;
-}
-
-h3 {
-  color:#4CAF50;
-  magin.left: 330px;
-}
-
-th {
-  text-align: left; 
-  color:steelblue
-}
-
-header{
-    margin-left: 100px;
-}
-
-#table {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-}
-
-#table td, #table th {
-    border: 0px solid #ddd;
-    padding: 8px;
-}
-
-#table tr:nth-child(even){
-	background-color: #f2f2f2;
-}
-
-#table tr:hover {
-	background-color: #ddd;
-}
-
-#table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
-
-.button {
-    background-color: #108700; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-ul {
- list-style-type: none;
-}
-</style>
 
 <table class="center" id="table">
  <tr>
-  <th colspan="3">{{name}}</th>
-  
+  <th colspan="2" id="name">{{name}}</th>
+  <th ><img id= "pic" width="72px" height="128px" src="eu.jpg" class="aligncenter" alt=""/></th>
  </tr>
  <tr>
   <td>Data de nascimento: {{dateOfBirth}}</td>
@@ -141,28 +65,24 @@ ul {
   <th colspan="2">Provisory Modal</th>
  </tr>
  <tr>
-  <td>Curso</td>
+  <td id="label">Curso</td>
   <td><input class='field' type = "text" [(ngModel)]="course"></td>
  </tr>
  <tr>
-  <td>Instituição</td>
+  <td id="label">Instituição</td>
   <td><input class='field' type = "text" [(ngModel)]="institution"></td>
  </tr>
  <tr>
-  <td>Local</td>
+  <td id="label">Local</td>
   <td><input class='field' type = "text" [(ngModel)]="institutionPlace"></td>
  </tr>
  <tr>
-  <td>Carga Horária</td>
+  <td id="label">Carga Horária</td>
   <td><input class='field' type = "text" [(ngModel)]="workload"></td>
  </tr>
 </table>
 
-
 <br>
-<div ng-app="ngModule" ng-strict-di>
- <div ng-controller = 'controllerDataset'>
-	
 <table class='center' id="table">
  <tr>
   <th colspan="3" class='header'>Cursos</th>
@@ -179,6 +99,4 @@ ul {
 
 </ul>
 </table>
-
-</div>
-</div>
+ 

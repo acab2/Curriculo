@@ -1,5 +1,5 @@
 ﻿
-[
+var cursos = [
 	{
 		"Curso": "Programação em C/C++",
 		"Instituicao": "Universidade Federal de Pernambuco",
