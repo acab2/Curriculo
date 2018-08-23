@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-declare global {
-  const angular: typeof _angular_;
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,7 +19,7 @@ export class AppComponent {
   fone = '(81) 979152069';
   email = 'acab2@cin.ufpe.br';
   driversLicense = 'Classes A e B';
-  profile = ['Trabalho em equipe', 'Ótimas noções em OO e lógica de programação'];
+  profile = ['Trabalho em equipe', 'Easygoing', 'Vontade de aprender', 'Flexível' ];
   academicFormation = '2014.2 - Cursando - Universidade Federal de Pernambuco - Ciência da Computação';
  
   add(){						
