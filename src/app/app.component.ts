@@ -19,7 +19,7 @@ export class AppComponent {
   fone = '(81) 979152069';
   email = 'acab2@cin.ufpe.br';
   driversLicense = 'Classes A e B';
-  profile = ['Trabalho em equipe', 'Ótimas noções em OO e lógica de programação', 'Vontade de aprender, Flexibilidade'];
+  profile = ['Trabalho em equipe', 'Ótimas noções em OO e lógica de programação', 'Vontade de aprender', 'Flexibilidade'];
   academicFormation = '2014.2 - Cursando - Universidade Federal de Pernambuco - Ciência da Computação';
  
   courses = 
