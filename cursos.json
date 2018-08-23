@@ -1,0 +1,87 @@
+﻿
+[
+	{
+		"Curso": "Programação em C/C++",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Programação em Java",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "120h"
+	},
+	{
+		"Curso": "JavaScript(D3)",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Haskell",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Swift(IOS)",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "HTML",
+		"Instituicao": "Internet",
+		"Local": "Home office",
+		"Carga Horária": "Indeterminado"
+	},
+	{
+		"Curso": "CSS",
+		"Instituicao": "Internet",
+		"Local": "Home office",
+		"Carga Horária": "Indeterminado"
+	},
+	{
+		"Curso": "Banco de dados (Oracle)",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Banco de dados (MySql)",
+		"Instituicao": "Faculdade Joaquim Nabuco",
+		"Local": "Paulista",
+		"Carga Horária": "60h"
+	},
+	{
+		"Curso": "Introdução a Inteligência Artificial",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Introdução a Redes Neurais",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Visualização de Dados",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Análise de requisitos",
+		"Instituicao": "Universidade Federal de Pernambuco",
+		"Local": "Recife",
+		"Carga Horária": "75h"
+	},
+	{
+		"Curso": "Inglês",
+		"Instituicao": "SENAC",
+		"Local": "Recife",
+		"Carga Horária": "480h"
+	}
+]
