@@ -111,11 +111,16 @@ export class AppComponent {
 	}
 ];
   course = "";
+  institution = "";
+  institutionPlace = "";
+  workload = "";
   
-  add(){
-	  this.courses.push({"Curso": this.course, "Instituicao": "padrão", "Local": "Recife", "CargaHoraria": "75h"});
+  add(){						//this.course
+	  this.courses.push({"Curso": this.course, "Instituicao": this.institution, "Local": this.institutionPlace, "CargaHoraria": this.workload});
   }
   
-
-  
+  openModal(){
+	  console.log("Modal Here!");
+  }
 }
+

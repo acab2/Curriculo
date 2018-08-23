@@ -16,8 +16,13 @@ td{
   align: left;
 }
 h1 {
-  color:steelblue;
+  color:#4CAF50;
   text-align: center;
+
+}
+h3 {
+  color:#4CAF50;
+  magin.left: 330px;
 
 }
 th {
@@ -29,10 +34,49 @@ header{
 
 }
 
+
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button {
+    background-color: #108700; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.field {
+margin: center;
+}
+
 </style>
 
 <h1>{{name}}</h1>
-<table class="center">
+<table class="center" id="table">
  <tr>
   <th>Dados Pessoais</th>
   <th></th>
@@ -70,20 +114,49 @@ header{
  </tr>
 </table>
 <br>
-<button type="button" (click)="add()">Adicionar</button>
 
-<table class='center'>
+
+<table class='center' id="table">
+ <tr>
+  <th>Provisory Modal</th>
+  <th></th>
+ </tr>
+ <tr>
+  <td>Curso</td>
+  <td><input class='field' type = "text" [(ngModel)]="course"></td>
+ </tr>
+ <tr>
+  <td>Instituição</td>
+  <td><input class='field' type = "text" [(ngModel)]="institution"></td>
+ </tr>
+ <tr>
+  <td>Local</td>
+  <td><input class='field' type = "text" [(ngModel)]="institutionPlace"></td>
+ </tr>
+ <tr>
+  <td>Carga Horária</td>
+  <td><input class='field' type = "text" [(ngModel)]="workload"></td>
+ </tr>
+</table>
+
+
+<br>
+<div></div>
+<table class='center' id="table">
  <tr>
   <th class='header'>Cursos</th>
- 
+  <th></th>
+  <th></th>
+  <th class='header'><button type="button" class='button' (click)="add()">Adicionar</button></th>
  </tr>
-<ul>
- <li *ngFor="let item of courses"> 
+ <ul>
+ <li *ngFor="let item of courses">
   <tr>
    <td>{{item.Curso}} </td>
    <td>{{item.Instituicao}}</td>
    <td>{{item.Local}}</td>
    <td>{{item.CargaHoraria}}</td>
   </tr></li>
+
 </ul>
 </table>
