@@ -20,34 +20,70 @@ h1 {
   text-align: center;
 
 }
+th {
+  text-align: left; 
+  color:steelblue
+}
+header{
+    margin-left: 100px;
+
+}
+
 </style>
 
 <h1>{{name}}</h1>
 <table class="center">
-<tr>
-<td>Data de nascimento: {{dateOfBirth}}</td>
-<td>Sexo: {{gender}}</td>
-<td></td>
-</tr><tr>
-<td>Estado civil: {{civilStatus}} </td>
-<td></td>
-<td></td>
-</tr><tr>
-<td>Endereço: {{adress}} </td>
-<td>Número: {{number}}</td>
-<td></td>
-</tr><tr>
-<td>Cidade: {{city}} </td>
-<td>Bairro: {{neighborhood}} </td>
-<td>CEP: {{postalCode}}</td>
-</tr><tr>
-<td>Contato: {{fone}}</td>
-<td>Email: {{email}}</td>
-<td></td>
-</tr><tr>
-<td>CNH: {{driversLicense}}</td>
-<td></td>
-<td></td>
-</tr>
+ <tr>
+  <th>Dados Pessoais</th>
+  <th></th>
+  <th></th>
+ </tr>
+ <tr>
+  <td>Data de nascimento: {{dateOfBirth}}</td>
+  <td>Sexo: {{gender}}</td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>Estado civil: {{civilStatus}} </td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>Endereço: {{adress}} </td>
+  <td>Número: {{number}}</td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>Cidade: {{city}} </td>
+  <td>Bairro: {{neighborhood}} </td>
+  <td>CEP: {{postalCode}}</td>
+ </tr>
+ <tr>
+  <td>Contato: {{fone}}</td>
+  <td>Email: {{email}}</td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>CNH: {{driversLicense}}</td>
+  <td></td>
+  <td></td>
+ </tr>
 </table>
 <br>
+<button type="button" (click)="add()">Adicionar</button>
+
+<table class='center'>
+ <tr>
+  <th class='header'>Cursos</th>
+ 
+ </tr>
+<ul>
+ <li *ngFor="let item of courses"> 
+  <tr>
+   <td>{{item.Curso}} </td>
+   <td>{{item.Instituicao}}</td>
+   <td>{{item.Local}}</td>
+   <td>{{item.CargaHoraria}}</td>
+  </tr></li>
+</ul>
+</table>
