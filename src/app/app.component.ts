@@ -19,22 +19,10 @@ export class AppComponent {
   fone = '(81) 979152069';
   email = 'acab2@cin.ufpe.br';
   driversLicense = 'Classes A e B';
-  profile = ['Trabalho em equipe', 'Easygoing', 'Vontade de aprender', 'Flexível' ];
+  profile = ['Trabalho em equipe', 'Ótimas noções em OO e lógica de programação'];
   academicFormation = '2014.2 - Cursando - Universidade Federal de Pernambuco - Ciência da Computação';
  
-  add(){						
-	  this.courses.push({"Curso": this.course, "Instituicao": this.institution, "Local": this.institutionPlace, "CargaHoraria": this.workload});
-		this.course = "";
-		this.institution = "";
-		this.institutionPlace = "";
-		this.workload = "";
-  }
-  
-  openModal(){
-	  console.log("Modal Here!");
-  }
-  
-    courses = 
+  courses = 
 [
 	{
 		"Curso": "Programação em C/C++",
@@ -121,5 +109,21 @@ export class AppComponent {
 		"CargaHoraria": "360h"
 	}
 ];
+  course = "";
+  institution = "";
+  institutionPlace = "";
+  workload = "";
+  
+  add(){						//this.course
+	  this.courses.push({"Curso": this.course, "Instituicao": this.institution, "Local": this.institutionPlace, "CargaHoraria": this.workload});
+  this.course = "";
+		this.institution = "";
+		this.institutionPlace = "";
+		this.workload = "";
+  }
+  
+  openModal(){
+	  console.log("Modal Here!");
+  }
 }
 
