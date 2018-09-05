@@ -2,7 +2,7 @@
 <table class="center" id="table">
  <tr>
   <th colspan="2" id="name">{{name}}</th>
-  <th ><img id= "pic" width="72px" height="128px" src="eu.jpg" class="aligncenter" alt=""/></th>
+  <th ><img id= "pic" width="72px" height="128px" src="assets/eu.jpg" class="picture" alt=""/></th>
  </tr>
  <tr>
   <td>Data de nascimento: {{dateOfBirth}}</td>
@@ -66,6 +66,7 @@
 </table>
 <br>
 
+<!--  
 <table class='center' id="table">
  <tr>
   <th colspan="2">Provisory Modal</th>
@@ -87,22 +88,23 @@
   <td><input class='field' type = "text" [(ngModel)]="workload"></td>
  </tr>
 </table>
+-->
 
 <br>
 <table class='center' id="table">
  <tr>
   <th colspan="3" class='header'>Cursos</th>
-  <th class='header'><button type="button" class='button' (click)="add()">Adicionar</button></th>
+  <!--<th class='header'><button type="button" class='button' (click)="add()">Adicionar</button></th>-->
  </tr>
  <ul>
- <li *ngFor="let item of courses">
+ <li *ngFor="let item of courses" class='center'>
   <tr>
    <td>{{item.Curso}} </td>
    <td>{{item.Instituicao}}</td>
    <td>{{item.Local}}</td>
    <td>{{item.CargaHoraria}}</td>
-  </tr></li>
-
+  </tr>
+ </li>
 </ul>
 </table>
  
